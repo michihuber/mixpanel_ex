@@ -5,7 +5,15 @@ defmodule Mixpanel.Mixfile do
     [app: :mixpanel,
      version: "0.0.1",
      elixir: "~> 1.0",
-     deps: deps]
+     deps: deps,
+
+     description: "A client for the Mixpanel HTTP API. See mixpanel.com.",
+     package: [
+       contributors: ["MSch", "michihuber"],
+       licenses: ["MIT"],
+       links: %{"Github" => "https://github.com/michihuber/mixpanel_ex"},
+     ],
+    ]
   end
 
   def application do
@@ -18,3 +26,4 @@ defmodule Mixpanel.Mixfile do
     [{:exjsx, "~> 3.1.0"}]
   end
 end
+
