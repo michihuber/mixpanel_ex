@@ -1,2 +1,0 @@
-defmodule MixpanelEx do
-end
