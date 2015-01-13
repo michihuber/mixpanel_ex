@@ -3,7 +3,7 @@ defmodule Mixpanel.Mixfile do
 
   def project do
     [app: :mixpanel,
-     version: "0.0.1",
+     version: "0.0.2",
      elixir: "~> 1.0",
      deps: deps,
 
@@ -17,7 +17,7 @@ defmodule Mixpanel.Mixfile do
   end
 
   def application do
-    [applications: [:logger],
+    [applications: [:logger, :inets],
      env: [token: nil],
      mod: {Mixpanel, []}]
   end
